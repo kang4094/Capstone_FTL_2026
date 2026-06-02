@@ -1,0 +1,64 @@
+# CMake Temporary Files
+CMakeFiles/
+*.cmake
+CMakeCache.txt
+
+# SimpleSSD output
+libsimplessd.a
+libmcpat.a
+simplessd-standalone
+
+# Visual Studio Specific
+.vs/
+Debug/
+Release/
+Win32/
+MinSizeRel/
+RelWithDebInfo/
+SimpleSSD-Standalone.dir
+*.sdf
+*.db
+*.opendb
+*.filters
+*.vcxproj
+*.vcproj
+*.sln
+
+# Make Specific
+Makefile
+*.o
+*.s
+
+# Atom Specific
+.clang_complete
+compile_flags.txt
+
+# VSCode Specific
+.vscode/
+*.code-workspace
+
+# ---- Capstone experiment outputs (large, regenerable by run_exp*.sh) -------
+results/
+output/
+
+# ---- Large / derived / unused data files -----------------------------------
+# Keep trace_nexus5_fitted.txt (source trace used to reproduce experiments).
+trace_nexus5_loop2.txt
+merged_simplessd_trace.txt
+log152_YouTube.txt
+WorkSpace_nexus5-sample_simplessd.txt
+Trace_files/
+
+# ---- Presentation / report deliverables (excluded from upload entirely) ----
+PPT/
+Word/
+*.pptx
+*.docx
+
+# ---- Tooling / OS / scratch junk -------------------------------------------
+*:Zone.Identifier
+*Zone.Identifier
+.DS_Store
+.claude/
+__pycache__/
+_*.sh
