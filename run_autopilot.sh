@@ -9,7 +9,8 @@
 # Fully self-contained; safe to run detached.
 # ============================================================================
 set -u
-SD="$HOME/SimpleSSD-Standalone"; cd "$SD" || exit 1
+# SD="$HOME/SimpleSSD-Standalone"; cd "$SD" || exit 1 <-- 경로 수정함
+SD="$(cd "$(dirname "$0")" && pwd)"; cd "$SD" || exit 1
 TS=$(date +%Y%m%d_%H%M%S)
 RUN="$SD/results/autopilot_$TS"; mkdir -p "$RUN"
 LOG="$RUN/autopilot.log"; exec > >(tee -a "$LOG") 2>&1

@@ -1,7 +1,8 @@
 #!/bin/bash
 # Quick alpha sweep capturing WAF (+ endurance, sigma) for the alpha curve.
 set -u
-SD=$HOME/SimpleSSD-Standalone; BIN=$SD/simplessd-standalone
+# SD=$HOME/SimpleSSD-Standalone; BIN=$SD/simplessd-standalone <-- 경로 수정함
+SD="$(cd "$(dirname "$0")" && pwd)"; BIN="$SD/simplessd-standalone"
 GEN=$SD/config/sample.cfg; TRC=$SD/config/trace.cfg; SSD=$SD/simplessd/config/sample.cfg
 FITTED=$SD/trace_nexus5_fitted.txt
 ALPHAS="0 0.1 0.2 0.4 0.8 1.5"

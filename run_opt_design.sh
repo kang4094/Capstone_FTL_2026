@@ -23,7 +23,8 @@
 # Output -> $OUT/opt_runs.csv   (OUT passed in by the autopilot, or auto-created)
 # ============================================================================
 set -u
-SD="$HOME/SimpleSSD-Standalone"
+# SD="$HOME/SimpleSSD-Standalone" <-- 경로 수정함
+SD="$(cd "$(dirname "$0")" && pwd)"
 BIN="$SD/simplessd-standalone"
 GEN_BASE="$SD/config/sample.cfg"
 TRC_BASE="$SD/config/trace.cfg"

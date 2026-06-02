@@ -20,7 +20,8 @@
 # winner is robust across BOTH inputs (gen & trace), not just one.
 # ============================================================================
 set -u
-SD="$HOME/SimpleSSD-Standalone"
+# SD="$HOME/SimpleSSD-Standalone" <-- 경로 수정함
+SD="$(cd "$(dirname "$0")" && pwd)"
 BIN="$SD/simplessd-standalone"
 GEN_BASE="$SD/config/sample.cfg"
 TRC_BASE="$SD/config/trace.cfg"
