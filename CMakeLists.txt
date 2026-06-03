@@ -56,10 +56,10 @@ if (MSVC)
 else ()
   if (DEBUG_BUILD)
     set(CMAKE_CXX_FLAGS
-      "-O0 -g -rdynamic -pthread -Wall -Wextra -Werror ${CMAKE_CXX_FLAGS}")
+      "-O0 -g -rdynamic -pthread -Wall -Wextra -Werror -Wno-error=deprecated-declarations -include string.h -include strings.h ${CMAKE_CXX_FLAGS}")
   else ()
     set(CMAKE_CXX_FLAGS
-      "-O2 -rdynamic -pthread -Wall -Wextra -Werror ${CMAKE_CXX_FLAGS}")
+      "-O2 -rdynamic -pthread -Wall -Wextra -Werror -Wno-error=deprecated-declarations -include string.h -include strings.h ${CMAKE_CXX_FLAGS}")
   endif ()
 
   if (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
