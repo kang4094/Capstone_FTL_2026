@@ -19,9 +19,9 @@
 요구: Linux/WSL · CMake ≥ 3.10 · g++ (C++17)
 
 ```bash
-git clone https://github.com/muhyunjung/Capstone_FTL_2026.git
+git clone https://github.com/kang4094/Capstone_FTL_2026.git
 cd Capstone_FTL_2026
-cmake .
+cmake -DDEBUG_BUILD=off .
 make -j$(nproc)
 ```
 
